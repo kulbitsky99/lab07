@@ -1,0 +1,274 @@
+Execute command: [
+  `which`
+  `cmake`
+]
+[/home/mikita/2020/acronis/industrial_programming_acronis_2020/kulbitsky99/workspace/projects/lab07]> "which" "cmake"
+/usr/bin/cmake
+Execute command: [
+  `cmake`
+  `--version`
+]
+[/home/mikita/2020/acronis/industrial_programming_acronis_2020/kulbitsky99/workspace/projects/lab07]> "cmake" "--version"
+cmake version 3.13.4
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+Execute command: [
+  `cmake`
+  `-H.`
+  `-B/home/mikita/2020/acronis/industrial_programming_acronis_2020/kulbitsky99/workspace/projects/lab07/_builds/default`
+  `-DCMAKE_TOOLCHAIN_FILE=/home/mikita/2020/acronis/industrial_programming_acronis_2020/kulbitsky99/workspace/projects/lab07/tools/polly/default.cmake`
+]
+[/home/mikita/2020/acronis/industrial_programming_acronis_2020/kulbitsky99/workspace/projects/lab07]> "cmake" "-H." "-B/home/mikita/2020/acronis/industrial_programming_acronis_2020/kulbitsky99/workspace/projects/lab07/_builds/default" "-DCMAKE_TOOLCHAIN_FILE=/home/mikita/2020/acronis/industrial_programming_acronis_2020/kulbitsky99/workspace/projects/lab07/tools/polly/default.cmake"
+-- [polly] Used toolchain: Default
+-- The C compiler identification is GNU 8.3.0
+-- The CXX compiler identification is GNU 8.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: /home/mikita/projects/hunter
+-- [hunter] [ Hunter-ID: 5659b15 | Toolchain-ID: 8519698 | Config-ID: 9775f4e ]
+-- [hunter] GTEST_ROOT: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Install (ver.: 1.7.0-hunter-9)
+-- [hunter] Building GTest
+loading initial cache file /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/cache.cmake
+loading initial cache file /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/args.cmake
+-- [polly] Used toolchain: Default
+-- The C compiler identification is GNU 8.3.0
+-- The CXX compiler identification is GNU 8.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Build
+Scanning dependencies of target GTest-Release
+[  6%] Creating directories for 'GTest-Release'
+[ 12%] Performing download step (download, verify and extract) for 'GTest-Release'
+-- Downloading...
+   dst='/home/mikita/projects/hunter/_Base/Download/GTest/1.7.0-hunter-9/8a47fe9/v1.7.0-hunter-9.tar.gz'
+   timeout='none'
+-- Using src='https://github.com/hunter-packages/gtest/archive/v1.7.0-hunter-9.tar.gz'
+-- [download 100% complete]
+-- verifying file...
+       file='/home/mikita/projects/hunter/_Base/Download/GTest/1.7.0-hunter-9/8a47fe9/v1.7.0-hunter-9.tar.gz'
+-- Downloading... done
+-- extracting...
+     src='/home/mikita/projects/hunter/_Base/Download/GTest/1.7.0-hunter-9/8a47fe9/v1.7.0-hunter-9.tar.gz'
+     dst='/home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 18%] No patch step for 'GTest-Release'
+[ 25%] No update step for 'GTest-Release'
+[ 31%] Performing configure step for 'GTest-Release'
+loading initial cache file /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/cache.cmake
+loading initial cache file /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/args.cmake
+-- [polly] Used toolchain: Default
+-- The CXX compiler identification is GNU 8.3.0
+-- The C compiler identification is GNU 8.3.0
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found PythonInterp: /home/mikita/anaconda3/bin/python (found version "3.7.4")
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build
+[ 37%] Performing build step for 'GTest-Release'
+Scanning dependencies of target gtest
+[ 25%] Building CXX object CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 50%] Linking CXX static library libgtest.a
+[ 50%] Built target gtest
+Scanning dependencies of target gtest_main
+[ 75%] Building CXX object CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[100%] Linking CXX static library libgtest_main.a
+[100%] Built target gtest_main
+[ 43%] Performing install step for 'GTest-Release'
+[ 50%] Built target gtest
+[100%] Built target gtest_main
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/lib/libgtest.a
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/lib/libgtest_main.a
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/gtest-death-test.h
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/gtest-test-part.h
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/gtest-message.h
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/gtest.h
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/gtest-printers.h
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/gtest-spi.h
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/gtest_pred_impl.h
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/gtest-typed-test.h
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/gtest_prod.h
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal/gtest-param-util-generated.h
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal/gtest-tuple.h
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal/gtest-param-util.h
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal/gtest-linked_ptr.h
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal/gtest-death-test-internal.h
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal/gtest-port.h
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal/gtest-string.h
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal/gtest-type-util.h
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal/gtest-filepath.h
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal/gtest-internal.h
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/gtest-param-test.h
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/lib/cmake/GTest/GTestTargets.cmake
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/lib/cmake/GTest/GTestTargets-release.cmake
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/lib/cmake/GTest/GTestConfig.cmake
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/lib/cmake/GTest/GTestConfigVersion.cmake
+loading initial cache file /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/args.cmake
+[ 50%] Completed 'GTest-Release'
+[ 50%] Built target GTest-Release
+Scanning dependencies of target GTest-Debug
+[ 56%] Creating directories for 'GTest-Debug'
+[ 62%] Performing download step (download, verify and extract) for 'GTest-Debug'
+-- verifying file...
+       file='/home/mikita/projects/hunter/_Base/Download/GTest/1.7.0-hunter-9/8a47fe9/v1.7.0-hunter-9.tar.gz'
+-- File already exists and hash match (skip download):
+  file='/home/mikita/projects/hunter/_Base/Download/GTest/1.7.0-hunter-9/8a47fe9/v1.7.0-hunter-9.tar.gz'
+  SHA1='8a47fe9c4e550f4ed0e2c05388dd291a059223d9'
+-- extracting...
+     src='/home/mikita/projects/hunter/_Base/Download/GTest/1.7.0-hunter-9/8a47fe9/v1.7.0-hunter-9.tar.gz'
+     dst='/home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 68%] No patch step for 'GTest-Debug'
+[ 75%] No update step for 'GTest-Debug'
+[ 81%] Performing configure step for 'GTest-Debug'
+loading initial cache file /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/cache.cmake
+loading initial cache file /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/args.cmake
+-- [polly] Used toolchain: Default
+-- The CXX compiler identification is GNU 8.3.0
+-- The C compiler identification is GNU 8.3.0
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found PythonInterp: /home/mikita/anaconda3/bin/python (found version "3.7.4")
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build
+[ 87%] Performing build step for 'GTest-Debug'
+Scanning dependencies of target gtest
+[ 25%] Building CXX object CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 50%] Linking CXX static library libgtestd.a
+[ 50%] Built target gtest
+Scanning dependencies of target gtest_main
+[ 75%] Building CXX object CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[100%] Linking CXX static library libgtest_maind.a
+[100%] Built target gtest_main
+[ 93%] Performing install step for 'GTest-Debug'
+[ 50%] Built target gtest
+[100%] Built target gtest_main
+Install the project...
+-- Install configuration: "Debug"
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/lib/libgtestd.a
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/lib/libgtest_maind.a
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/gtest-death-test.h
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/gtest-test-part.h
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/gtest-message.h
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/gtest.h
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/gtest-printers.h
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/gtest-spi.h
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/gtest_pred_impl.h
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/gtest-typed-test.h
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/gtest_prod.h
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal/gtest-param-util-generated.h
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal/gtest-tuple.h
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal/gtest-param-util.h
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal/gtest-linked_ptr.h
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal/gtest-death-test-internal.h
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal/gtest-port.h
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal/gtest-string.h
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal/gtest-type-util.h
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal/gtest-filepath.h
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/internal/gtest-internal.h
+-- Up-to-date: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/./include/gtest/gtest-param-test.h
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/lib/cmake/GTest/GTestTargets.cmake
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/lib/cmake/GTest/GTestTargets-debug.cmake
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/lib/cmake/GTest/GTestConfig.cmake
+-- Installing: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/Install/lib/cmake/GTest/GTestConfigVersion.cmake
+loading initial cache file /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest/args.cmake
+[100%] Completed 'GTest-Debug'
+[100%] Built target GTest-Debug
+-- [hunter] Build step successful (dir: /home/mikita/projects/hunter/_Base/5659b15/8519698/9775f4e/Build/GTest)
+-- [hunter] Cache saved: /home/mikita/projects/hunter/_Base/Cache/raw/e0a5bb5adfbbb57636145f94cfc1da026eccc219.tar.bz2
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/mikita/2020/acronis/industrial_programming_acronis_2020/kulbitsky99/workspace/projects/lab07/_builds/default
+Execute command: [
+  `cmake`
+  `--build`
+  `/home/mikita/2020/acronis/industrial_programming_acronis_2020/kulbitsky99/workspace/projects/lab07/_builds/default`
+  `--`
+]
+[/home/mikita/2020/acronis/industrial_programming_acronis_2020/kulbitsky99/workspace/projects/lab07]> "cmake" "--build" "/home/mikita/2020/acronis/industrial_programming_acronis_2020/kulbitsky99/workspace/projects/lab07/_builds/default" "--"
+Scanning dependencies of target print
+[ 25%] Building CXX object CMakeFiles/print.dir/sources/print.cpp.o
+[ 50%] Linking CXX static library libprint.a
+[ 50%] Built target print
+Scanning dependencies of target demo
+[ 75%] Building CXX object CMakeFiles/demo.dir/demo/main.cpp.o
+[100%] Linking CXX executable demo
+[100%] Built target demo
+Execute command: [
+  `ctest`
+]
+[/home/mikita/2020/acronis/industrial_programming_acronis_2020/kulbitsky99/workspace/projects/lab07/_builds/default]> "ctest"
+*********************************
+No test configuration file found!
+*********************************
+Usage
+
+  ctest [options]
+
