@@ -1,1 +1,0 @@
-"cmake" "-H." "-B/home/mikita/2020/acronis/industrial_programming_acronis_2020/kulbitsky99/workspace/projects/lab07/_builds/default" "-DCMAKE_TOOLCHAIN_FILE=/home/mikita/2020/acronis/industrial_programming_acronis_2020/kulbitsky99/workspace/projects/lab07/tools/polly/default.cmake"
