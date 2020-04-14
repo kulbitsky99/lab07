@@ -4,7 +4,6 @@ include("cmake/HunterGate.cmake")
 HunterGate(
     URL "https://github.com/cpp-pm/hunter/archive/v0.23.251.tar.gz"
     SHA1 "5659b15dc0884d4b03dbd95710e6a1fa0fc3258d"
-    LOCAL
 )
 
 set(CMAKE_CXX_STANDARD 11)
@@ -52,6 +51,7 @@ install(TARGETS print
 
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/ DESTINATION include)
 install(EXPORT print-config DESTINATION cmake)
+
 if(BUILD_TESTS)
   enable_testing()
   file(GLOB ${PROJECT_NAME}_TEST_SOURCES tests/*.cpp)
